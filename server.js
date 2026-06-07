@@ -23,8 +23,8 @@ mongoose
   .then(() => console.log('MongoDB Connected'))
   .catch((err) => console.log(err));
 
-app.get('/', (req, res) => {
-  res.send('Aura Ecommerce API Running');
+app.get('/test', (req, res) => {
+  res.send('TEST ROUTE WORKING');
 });
 
 const PORT = process.env.PORT || 5000;
